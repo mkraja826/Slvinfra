@@ -1,5 +1,7 @@
 export const company = {
- name: "SLV Infra",
+ name: "Sri Laxmi Venkateshwara Enterprises",
+ brand: "SLV Infra",
+ domain: "slvinfra.com",
  founded: 1987,
  founder: "Mr. Venkateshwara Rao",
  introduction: "Established in Hyderabad in 1987 and subsequently active in Bangalore from 1992, SLV's brochure documents experience in infrastructure development, civil works, landscaping and site development.",
