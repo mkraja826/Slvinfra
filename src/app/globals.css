@@ -449,3 +449,39 @@ p{overflow-wrap:break-word}
  .site-shell .expertise-section .expertise-item{padding:23px 17px;min-height:auto}
 }
 @media(prefers-reduced-motion:reduce){.site-shell .hero-image{transform:none}}
+
+
+/* Unified editorial inner pages — SLV graphite, steel and copper */
+.inner-page{background:#f4f0e9;color:#1c262b}
+.inner-page .inner-intro{background:#1c262b;color:#f4f0e9;position:relative;isolation:isolate;overflow:hidden}
+.inner-page .inner-intro:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,transparent 24.9%,#ffffff0e 25%,transparent 25.1%,transparent 49.9%,#ffffff0e 50%,transparent 50.1%,transparent 74.9%,#ffffff0e 75%,transparent 75.1%),radial-gradient(ellipse at 90% 15%,#b57e5838,transparent 54%)}
+.inner-page .inner-intro .section-wrap{position:relative}
+.inner-page .inner-intro-top{border-top:1px solid #ffffff40;padding-top:22px;margin-top:45px;display:flex;justify-content:space-between;gap:20px}
+.inner-page .inner-intro .eyebrow{color:#e3b38b;letter-spacing:.13em;font-weight:700}
+.inner-page .inner-intro h1{max-width:980px;font-size:clamp(50px,6.4vw,96px);line-height:1.07;letter-spacing:-.062em;margin:40px 0 28px;text-wrap:balance;color:#f4f0e9}
+.inner-page .inner-intro p{max-width:680px;color:#d9d9d3;font-size:clamp(16px,1.5vw,20px);line-height:1.75}
+.inner-page .inner-intro-bottom{border-top:1px solid #ffffff40;margin-top:75px;padding:18px 0 27px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#e3b38b;font-size:10px;font-weight:750;letter-spacing:.13em}
+.inner-intro-line{display:block;width:clamp(48px,10vw,130px);height:1px;background:#d6a17b}
+.inner-page .inner-content{background:#f4f0e9;padding:95px 0 110px}
+.inner-page .inner-content .dark-eyebrow{color:#895637}
+.inner-page .inner-content h2{letter-spacing:-.045em}
+.inner-page .inner-cta{background:#1c262b;color:#f4f0e9;border:1px solid #35454b}
+.inner-page .inner-cta h2{color:#f4f0e9}
+.inner-page .inner-cta a{background:#d6a17b;color:#1c262b}
+.inner-page .inner-cta a:hover,.inner-page .inner-cta a:focus-visible{background:#f0c7a6;color:#1c262b}
+.inner-page .heritage-year{color:#1c262b}
+.inner-page .timeline{border-top:1px solid #a6aca8;border-bottom:1px solid #a6aca8}
+.inner-page .service-row{border-color:#bfc5c1;scroll-margin-top:92px}
+.inner-page .service-row:hover{background:#e7e5df}
+.inner-page .portfolio-entry{border-color:#c3c8c3}
+.inner-page .contact-form-panel{background:#fffdf9}
+.inner-page .archive-search input,.inner-page .archive-sort select{background:#fffdf9}
+@media(max-width:699px){
+ .inner-page .inner-intro-top{margin-top:26px;gap:14px}
+ .inner-page .inner-intro-top .eyebrow:last-child{display:none}
+ .inner-page .inner-intro h1{font-size:clamp(40px,10vw,56px);line-height:1.1;margin:30px 0 20px}
+ .inner-page .inner-intro p{font-size:15px;line-height:1.7}
+ .inner-page .inner-intro-bottom{margin-top:48px;padding-bottom:21px}
+ .inner-page .inner-content{padding:64px 0 78px}
+ .inner-page .inner-cta{padding:28px 20px}
+}
