@@ -504,3 +504,28 @@ p{overflow-wrap:break-word}
 .site-header .mobile-nav>a[aria-current="page"] span,.site-header .mobile-nav>a[aria-current="page"] svg{color:#89502f}
 .site-header .mobile-nav p{color:#4b5960}
 .site-header .mobile-nav>a:focus-visible{outline:2px solid #89502f;outline-offset:-2px}
+
+
+/* Footer layout repair: brand, navigation and legal row */
+.site-footer{padding:64px 0 28px;background:#13191d}
+.site-footer .footer-inner{display:grid;grid-template-columns:minmax(0,1fr);gap:38px;align-items:start}
+.site-footer .footer-inner>div:first-child{display:flex;flex-direction:column;align-items:flex-start;gap:20px;min-width:0}
+.site-footer .footer-wordmark{font-size:clamp(76px,17vw,136px);line-height:.9;letter-spacing:-.105em}
+.site-footer .footer-inner>div:first-child p{font-size:14px;line-height:1.7;max-width:320px}
+.site-footer .footer-inner nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px;width:100%;align-content:start}
+.site-footer .footer-inner nav a{display:flex;align-items:center;min-height:48px;padding:12px 0;border-bottom:1px solid #ffffff25;font-size:15px;line-height:1.4;color:#f6f3ed}
+.site-footer .footer-inner nav a:hover,.site-footer .footer-inner nav a:focus-visible{color:#e2a575}
+.site-footer .footer-bottom{grid-column:1/-1;display:flex;flex-direction:column;gap:12px;padding-top:23px;border-top:1px solid #ffffff35;font-size:11px;line-height:1.6;letter-spacing:.08em;color:#d9d3c8}
+@media(min-width:700px){
+ .site-footer{padding:80px 0 32px}
+ .site-footer .footer-inner{grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);column-gap:clamp(50px,8vw,140px);row-gap:65px}
+ .site-footer .footer-inner nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 25px;padding-top:16px}
+ .site-footer .footer-bottom{flex-direction:row;justify-content:space-between;gap:20px}
+}
+@media(max-width:699px){
+ .site-footer{padding:62px 0 27px}
+ .site-footer .footer-inner{grid-template-columns:minmax(0,1fr);gap:35px}
+ .site-footer .footer-wordmark{font-size:clamp(78px,23vw,116px)}
+ .site-footer .footer-inner nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .site-footer .footer-inner nav a{font-size:15px}
+}
