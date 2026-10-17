@@ -253,3 +253,39 @@ p{overflow-wrap:break-word}
 .menu-toggle{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
 @media(min-width:1100px){.menu-toggle{display:none}}
 @media(max-width:1099px){.mobile-nav{max-height:calc(100dvh - 78px);overflow-y:auto;overscroll-behavior:contain}}
+
+
+/* Screenshot-confirmed foreground/background and layout corrections */
+.expertise-section .section-heading h2{color:#f6f3ed}
+.expertise-section .section-heading h2 span{color:#e2a575}
+.expertise-section .section-heading>p{color:#d9d3c8}
+.manifesto-section .manifesto-grid p{color:#3d4a50}
+.manifesto-section .manifesto-grid .eyebrow{color:#725036}
+.manifesto-section .manifesto-grid h2{color:#20272b}
+.manifesto-section .manifesto-grid h2 span{color:#485860}
+.contact-section .contact-grid h2{color:#f6f3ed}
+.contact-section .contact-grid h2 span{color:#e2a575}
+.contact-section .contact-grid p{color:#e2e0db}
+.contact-section .contact-grid .contact-note{color:#c4c5c4;font-size:13px;line-height:1.7}
+.site-footer .footer-wordmark{display:inline-block;font-size:clamp(64px,12vw,150px);font-weight:800;line-height:1;letter-spacing:-.1em;color:#f6f3ed}
+.site-footer .footer-wordmark span{color:#e2a575}
+.site-footer .footer-inner>div:first-child{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.site-footer .footer-inner>div:first-child p{margin:0;color:#d9d3c8;font-size:14px;line-height:1.65}
+@media(max-width:699px){
+ .contact-section{padding:85px 0 80px}
+ .contact-section .contact-grid{display:grid;gap:25px}
+ .contact-section .contact-grid h2{font-size:clamp(39px,9vw,58px);line-height:1.13;letter-spacing:-.045em;margin:20px 0 0}
+ .contact-section .contact-grid h2 span{display:inline;color:#e2a575}
+ .contact-section .contact-grid>div:last-child{display:grid;gap:18px}
+ .contact-section .contact-grid>div:last-child p{margin:0;font-size:15px;line-height:1.75}
+ .contact-section .contact-grid .contact-link{margin:0;width:fit-content;max-width:100%;font-size:13px}
+ .contact-section .contact-grid .contact-note{font-size:13px;color:#c4c5c4}
+ .manifesto-section{padding:85px 0}
+ .manifesto-section .manifesto-grid p{font-size:15px;line-height:1.75;color:#3d4a50}
+ .expertise-section .section-heading h2{color:#f6f3ed}
+ .site-footer{padding:55px 0 30px}
+ .site-footer .footer-inner{gap:32px}
+ .site-footer .footer-wordmark{font-size:76px}
+ .site-footer .footer-inner nav{gap:14px 22px}
+ .site-footer .footer-inner nav a{font-size:14px}
+}
