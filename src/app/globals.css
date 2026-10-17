@@ -202,3 +202,45 @@ p{overflow-wrap:break-word}
 .archive-experience .portfolio-value strong{font-size:19px;color:#20272b;margin:0}
 .archive-empty{padding:55px 20px;text-align:center;border-bottom:1px solid #20272b40}.archive-empty h2{font-size:27px}.archive-empty p{color:#4b5960}.archive-empty button{border:0;background:#20272b;color:#fff;padding:13px 20px;font-weight:700}
 @media(min-width:800px){.archive-controls{grid-template-columns:minmax(0,1fr) auto;align-items:center}.archive-count span:last-child{display:block}.archive-experience .portfolio-entry{grid-template-columns:75px minmax(0,1fr);gap:25px;padding:36px 0}.archive-experience .portfolio-primary{display:grid;grid-template-columns:minmax(0,1fr) 210px;column-gap:30px}.archive-experience .portfolio-primary h2,.archive-experience .portfolio-primary p{grid-column:1}.archive-experience .portfolio-value{grid-column:2;grid-row:1/span 2;align-items:flex-end;text-align:right;margin:0;padding:0;border:0}}
+
+
+/* Home visual hierarchy refinements from mobile screenshots */
+.hero-image{background-position:center center}
+.hero-shade{background:linear-gradient(90deg,#11171cf2 0%,#11171ce3 48%,#11171c9e 100%),linear-gradient(0deg,#11171ce8,transparent 78%)}
+.hero-kicker{font-size:12px;font-weight:700;letter-spacing:.13em}
+.hero-overline{font-size:12px;font-weight:700;letter-spacing:.11em;line-height:1.6}
+.hero-bottom p{color:#f1eee9;font-size:16px;line-height:1.7}
+.intro-section .statement{max-width:760px;text-wrap:balance}
+.intro-description{max-width:680px;font-size:16px;line-height:1.85}
+.year-block{line-height:1;display:flex;flex-direction:column;align-items:flex-start}
+.year-block small{font-size:12px;line-height:1.5;letter-spacing:.1em;margin-top:16px}
+.section-heading>p,.manifesto-grid p,.contact-grid p{font-size:16px;line-height:1.8}
+.project-editorial-row p{font-size:15px;line-height:1.6}
+.expertise-item p{font-size:15px;line-height:1.7}
+@media(max-width:699px){
+ .hero{min-height:660px;min-height:max(660px,calc(100svh - 78px))}
+ .hero-inner{padding-bottom:44px}
+ .hero-copy{padding-top:92px}
+ .hero h1{font-size:clamp(40px,10.2vw,54px);line-height:1.12;letter-spacing:-.052em;text-wrap:pretty}
+ .hero-kicker{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:10px;line-height:1.5;letter-spacing:.07em}
+ .hero-index{margin-left:auto}
+ .hero-overline{font-size:11px;line-height:1.5}
+ .hero-bottom{gap:15px}
+ .hero-bottom p{font-size:15px;line-height:1.7}
+ .hero-rail{min-height:62px}
+ .intro-section{padding:76px 0 86px}
+ .intro-grid{gap:42px}
+ .year-block{font-size:clamp(79px,22vw,115px);letter-spacing:-.085em}
+ .year-block small{font-size:11px;margin-top:10px}
+ .statement{font-size:clamp(33px,8.3vw,46px);line-height:1.18;letter-spacing:-.045em}
+ .intro-description{font-size:15px;line-height:1.8}
+ .section-heading h2{font-size:clamp(39px,9.3vw,58px);line-height:1.12}
+ .section-heading>p{font-size:15px;line-height:1.75}
+ .expertise-item h3{font-size:clamp(22px,5.7vw,30px);line-height:1.22}
+ .expertise-item p{font-size:14px;line-height:1.7}
+ .project-editorial-row{grid-template-columns:27px minmax(0,1fr) 18px;gap:11px;padding:26px 0}
+ .project-editorial-row h3{font-size:clamp(22px,5.8vw,30px);line-height:1.2;letter-spacing:-.04em}
+ .project-editorial-row p{font-size:14px;line-height:1.7}
+ .manifesto-grid h2{font-size:clamp(37px,9vw,53px);line-height:1.17}
+ .manifesto-grid p,.contact-grid p{font-size:15px;line-height:1.8}
+}
