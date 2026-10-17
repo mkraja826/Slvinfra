@@ -35,5 +35,5 @@ export const projects:Project[] = [
 {id:23,client:"Trident Homes",project:"Vijayapura",costLakhs:750},
 {id:24,client:"Step to Stair Services",project:"Land Development",costLakhs:null},
 {id:25,client:"Nayana Groups",project:"Not specified in brochure",costLakhs:null},
-{id:26,client:"Telanagan Tourism, Development Corporation",project:"Buddhavanam, Nagarjuna Sagar",costLakhs:750}
+{id:26,client:"Telangana Tourism, Development Corporation",project:"Buddhavanam, Nagarjuna Sagar",costLakhs:750}
 ];
