@@ -31,5 +31,16 @@ jobs:
           if (!fs.existsSync(cssDir) || !fs.readdirSync(cssDir).some(x=>x.endsWith('.css'))) throw new Error('Missing compiled CSS assets');
           const projectHtml=fs.readFileSync('out/projects/index.html','utf8');
           if (!projectHtml.includes('Search by client or project')) throw new Error('Projects search missing');
-          console.log('All five routes and static assets verified');
+          const cssFiles = new Set(fs.readdirSync(cssDir).filter(x => x.endsWith('.css')));
+          for (const route of pages) {
+            const html = fs.readFileSync(path.join('out',route,'index.html'),'utf8');
+            const links = [...html.matchAll(/<link\\b[^>]*rel=["']stylesheet["'][^>]*>/gi)].map(m => m[0]);
+            const hrefs = links.map(tag => tag.match(/href=["']([^"']+)["']/i)?.[1]).filter(Boolean);
+            if (!hrefs.length) throw new Error('No stylesheet linked from '+(route||'home'));
+            for (const href of hrefs) {
+              const assetPath = path.join('out',decodeURIComponent(href.split('?')[0]).replace(/^\\//,''));
+              if (!fs.existsSync(assetPath)) throw new Error('Broken stylesheet link '+href+' on '+(route||'home'));
+            }
+          }
+          console.log('All five routes, linked stylesheets and static assets verified');
           NODE
