@@ -1,0 +1,6 @@
+import Link from "next/link";
+import {ArrowUpRight} from "lucide-react";
+import type {ReactNode} from "react";
+export default function InnerPage({index,eyebrow,title,lead,children}:{index:string;eyebrow:string;title:string;lead:string;children:ReactNode}){
+return <main className="inner-page"><header className="inner-header"><div className="section-wrap inner-header-row"><Link className="brand-mark" href="/"><span className="brand-monogram">SLV<span className="brand-mark-dot">.</span></span><span className="brand-label">INFRA<small>EST. 1987</small></span></Link><Link className="inner-home" href="/">BACK TO HOME <ArrowUpRight size={17}/></Link></div></header><section className="inner-intro"><div className="section-wrap"><span className="eyebrow">{index} / {eyebrow}</span><h1>{title}</h1><p>{lead}</p></div></section>{children}<footer className="inner-footer"><div className="section-wrap"><span>SRI LAXMI VENKATESHWARA ENTERPRISES</span><nav aria-label="Footer navigation"><Link href="/">Home</Link><Link href="/services">Services</Link><Link href="/about">About</Link><Link href="/projects">Projects</Link><Link href="/contact">Contact</Link></nav><small>SLVINFRA.COM</small></div></footer></main>
+}
