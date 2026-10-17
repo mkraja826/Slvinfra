@@ -244,3 +244,12 @@ p{overflow-wrap:break-word}
  .manifesto-grid h2{font-size:clamp(37px,9vw,53px);line-height:1.17}
  .manifesto-grid p,.contact-grid p{font-size:15px;line-height:1.8}
 }
+
+
+/* Clear active navigation and accessible mobile menu */
+.desktop-nav a[aria-current="page"]{color:#89502f;border-bottom:2px solid #89502f;padding-bottom:7px}
+.mobile-nav a[aria-current="page"]{color:#89502f;background:#20272b0d}
+.mobile-nav a[aria-current="page"] span{color:#89502f}
+.menu-toggle{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+@media(min-width:1100px){.menu-toggle{display:none}}
+@media(max-width:1099px){.mobile-nav{max-height:calc(100dvh - 78px);overflow-y:auto;overscroll-behavior:contain}}
