@@ -11,3 +11,18 @@ h1,h2,h3,h4,.serif { font-family:"Plus Jakarta Sans","Manrope",sans-serif; font-
 a,button,input,textarea,select { font:inherit; }
 :focus-visible { outline:2px solid var(--slv-copper); outline-offset:3px; }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Premium, progressive-enhancement motion system */
+@keyframes slv-enter {from{opacity:0;transform:translate3d(0,28px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes slv-hero-scale {from{transform:scale(1.075)}to{transform:scale(1)}}
+@media (prefers-reduced-motion:no-preference) {
+ .motion-ready [data-reveal]{opacity:0;transform:translate3d(0,28px,0);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+ .motion-ready [data-reveal].is-visible{opacity:1;transform:translate3d(0,0,0)}
+ .slv-hero-backdrop{animation:slv-hero-scale 1.8s ease-out both}
+ .slv-hero-content{animation:slv-enter 1s .15s both}
+ .slv-card{transition:transform .4s cubic-bezier(.2,.7,.2,1),border-color .3s,box-shadow .3s}
+ .slv-card:hover{transform:translateY(-6px);box-shadow:0 22px 50px #07182044}
+ .slv-action{transition:transform .25s ease,background-color .25s ease}
+ .slv-action:hover{transform:translateY(-2px)}
+}
+@media (prefers-reduced-motion:reduce){.motion-ready [data-reveal]{opacity:1;transform:none}.slv-hero-backdrop,.slv-hero-content{animation:none}.slv-card:hover,.slv-action:hover{transform:none}}
