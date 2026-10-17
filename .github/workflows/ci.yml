@@ -38,7 +38,7 @@ jobs:
             const hrefs = links.map(tag => tag.match(/href=["']([^"']+)["']/i)?.[1]).filter(Boolean);
             if (!hrefs.length) throw new Error('No stylesheet linked from '+(route||'home'));
             for (const href of hrefs) {
-              const assetPath = path.join('out',decodeURIComponent(href.split('?')[0]).replace(/^\\//,''));
+              const assetPath = path.join('out',decodeURIComponent(href.split('?')[0]).replace(/^\//,''));
               if (!fs.existsSync(assetPath)) throw new Error('Broken stylesheet link '+href+' on '+(route||'home'));
             }
           }
