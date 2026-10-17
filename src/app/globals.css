@@ -289,3 +289,9 @@ p{overflow-wrap:break-word}
  .site-footer .footer-inner nav{gap:14px 22px}
  .site-footer .footer-inner nav a{font-size:14px}
 }
+
+
+/* Keyboard skip link: hidden until focused */
+.skip-link{position:fixed;top:12px;left:12px;z-index:1000;transform:translateY(-160%);background:#f6f3ed;color:#20272b;border:2px solid #b7784a;padding:12px 18px;font-size:14px;font-weight:800;line-height:1.4;box-shadow:0 8px 24px #0005}
+.skip-link:focus-visible{transform:translateY(0);outline:3px solid #b7784a;outline-offset:2px}
+#main-content:focus{outline:none}
