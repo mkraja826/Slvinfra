@@ -344,3 +344,18 @@ p{overflow-wrap:break-word}
 .service-row[id]:target{outline:2px solid #b7784a;outline-offset:-2px}
 @media(max-width:699px){.hero-actions{width:100%;gap:10px}.hero-action-primary,.hero-action-secondary{font-size:11px;min-height:46px;padding:11px 14px;flex:1 1 145px}}
 @media(prefers-reduced-motion:reduce){.hero-action-primary,.hero-action-secondary{transition:none}}
+
+
+/* Compact sticky navigation and accessible inner-page wayfinding */
+.site-header{position:sticky;top:0;z-index:80;transition:height .2s ease,box-shadow .2s ease}
+.site-header-compact{height:60px;box-shadow:0 8px 22px #00000020}
+.site-header-compact .brand-monogram{font-size:25px}
+.site-header-compact .brand-label{font-size:11px}
+.site-header-compact .mobile-nav{top:60px}
+.desktop-nav a[aria-current="page"]{color:#f6f3ed;border-bottom:2px solid #dba77e;padding-bottom:7px}
+.mobile-nav a[aria-current="page"]{color:#f3c49e}
+.mobile-nav a{min-height:52px}
+.inner-breadcrumb{display:flex;align-items:center;gap:11px;padding:20px 0 0;font-size:12px;line-height:1.5;color:#e3ddd3}
+.inner-breadcrumb a{color:inherit;text-decoration:underline;text-underline-offset:4px}
+.inner-breadcrumb span[aria-current="page"]{color:#f4bb90}
+@media(prefers-reduced-motion:reduce){.site-header{transition:none}}
