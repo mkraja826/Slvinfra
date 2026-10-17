@@ -330,3 +330,17 @@ p{overflow-wrap:break-word}
  .expertise-section .expertise-item h3{font-size:19px;line-height:1.35}
  .expertise-section .expertise-item p{font-size:13px;line-height:1.6}
 }
+
+
+/* Direct contractor conversion actions, without an unconfigured submission backend */
+.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-width:0}
+.hero-action-primary,.hero-action-secondary{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:48px;padding:12px 20px;font-size:12px;font-weight:750;letter-spacing:.065em;text-decoration:none;line-height:1.35;transition:background .18s,color .18s,border-color .18s}
+.hero-action-primary{background:#e6b68f;color:#171d21;border:1px solid #e6b68f}
+.hero-action-secondary{background:rgba(23,29,33,.5);color:#fff;border:1px solid rgba(255,255,255,.7)}
+.hero-action-primary:hover,.hero-action-primary:focus-visible{background:#f6d3b5;color:#171d21}
+.hero-action-secondary:hover,.hero-action-secondary:focus-visible{background:#fff;color:#171d21}
+.hero-action-primary:focus-visible,.hero-action-secondary:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.service-row[id]{scroll-margin-top:100px}
+.service-row[id]:target{outline:2px solid #b7784a;outline-offset:-2px}
+@media(max-width:699px){.hero-actions{width:100%;gap:10px}.hero-action-primary,.hero-action-secondary{font-size:11px;min-height:46px;padding:11px 14px;flex:1 1 145px}}
+@media(prefers-reduced-motion:reduce){.hero-action-primary,.hero-action-secondary{transition:none}}
