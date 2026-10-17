@@ -71,7 +71,7 @@ jobs:
       - name: Build deployable site
         if: steps.credentials.outputs.available == 'true'
         run: |
-          npm ci --no-audit --no-fund
+          npm install --no-audit --no-fund
           npm run build
       - name: Publish Worker static assets
         if: steps.credentials.outputs.available == 'true'
