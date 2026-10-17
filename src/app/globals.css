@@ -295,3 +295,22 @@ p{overflow-wrap:break-word}
 .skip-link{position:fixed;top:12px;left:12px;z-index:1000;transform:translateY(-160%);background:#f6f3ed;color:#20272b;border:2px solid #b7784a;padding:12px 18px;font-size:14px;font-weight:800;line-height:1.4;box-shadow:0 8px 24px #0005}
 .skip-link:focus-visible{transform:translateY(0);outline:3px solid #b7784a;outline-offset:2px}
 #main-content:focus{outline:none}
+
+
+/* Balanced editorial heading scale — consistent across all five pages */
+.hero h1{font-size:clamp(43px,5.3vw,76px);line-height:1.13;letter-spacing:-.045em}
+.inner-intro h1{font-size:clamp(40px,5vw,70px);line-height:1.15;letter-spacing:-.04em}
+.statement{font-size:clamp(30px,3.5vw,50px);line-height:1.22;letter-spacing:-.035em}
+.expertise-section .section-heading h2{font-size:clamp(34px,4.1vw,58px);line-height:1.17;letter-spacing:-.04em}
+.manifesto-section .manifesto-grid h2{font-size:clamp(34px,4.3vw,60px);line-height:1.19;letter-spacing:-.04em}
+.contact-section .contact-grid h2{font-size:clamp(34px,4.2vw,58px);line-height:1.18;letter-spacing:-.04em}
+.services-lead h2,.about-statement h2{font-size:clamp(32px,4vw,56px);line-height:1.19;letter-spacing:-.04em}
+@media(max-width:699px){
+ .hero h1{font-size:clamp(37px,9vw,46px);line-height:1.16;letter-spacing:-.04em}
+ .inner-intro h1{font-size:clamp(35px,8.4vw,44px);line-height:1.17;letter-spacing:-.035em}
+ .statement{font-size:clamp(29px,7.2vw,37px);line-height:1.22}
+ .expertise-section .section-heading h2{font-size:clamp(32px,7.8vw,42px);line-height:1.19}
+ .manifesto-section .manifesto-grid h2{font-size:clamp(32px,7.8vw,42px);line-height:1.2}
+ .contact-section .contact-grid h2{font-size:clamp(32px,7.8vw,42px);line-height:1.19}
+ .services-lead h2,.about-statement h2{font-size:clamp(31px,7.6vw,40px);line-height:1.2}
+}
