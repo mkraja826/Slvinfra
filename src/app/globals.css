@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
-:root{--ink:#142630;--deep:#0d1d25;--copper:#D6A477;--paper:#F3EFE7;--steel:#88969A;--teal:#376C73;color-scheme:dark}
+:root{--ink:#20272b;--deep:#171d21;--copper:#b7784a;--paper:#f6f3ed;--steel:#68777d;--teal:#4b5960;--text-primary:#20272b;--text-secondary:#4b5960;--text-muted:#556269;--accent-readable:#89502f;--text-on-dark:#f6f3ed;--text-on-dark-muted:#d9d3c8;color-scheme:light}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:"Manrope",Arial,sans-serif;-webkit-font-smoothing:antialiased}::selection{background:var(--copper);color:var(--deep)}
 h1,h2,h3,h4,.serif{font-family:"Plus Jakarta Sans","Manrope",sans-serif;letter-spacing:-.055em}a,button,input,textarea,select{font:inherit}a{text-decoration:none}button{cursor:pointer}:focus-visible{outline:2px solid var(--copper);outline-offset:4px}
 .container-wide,.section-wrap{width:min(calc(100% - 40px),1320px);margin-inline:auto}.gold{color:var(--copper)}.panel{background:#1C333D;border:1px solid #36515A}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.18em;color:var(--copper)}.dark-eyebrow{color:#8d5b36}
@@ -24,7 +24,7 @@ h1,h2,h3,h4,.serif{font-family:"Plus Jakarta Sans","Manrope",sans-serif;letter-s
 
 
 /* SLV / 2026 architectural editorial redesign */
-:root{--ink:#20272b;--deep:#171d21;--copper:#b7784a;--paper:#f6f3ed;--steel:#788780;--teal:#3b6656;color-scheme:light}
+
 body{background:var(--paper);color:var(--deep);font-family:"Manrope",sans-serif}
 h1,h2,h3,h4{letter-spacing:-.065em}
 .site-header{height:78px;background:var(--paper);border-bottom:1px solid #20272b22;position:relative;z-index:80}
@@ -99,7 +99,7 @@ h1,h2,h3,h4{letter-spacing:-.065em}
 
 
 /* Accessibility typography and surface contrast audit — October 2026 */
-:root{--text-primary:#20272b;--text-secondary:#4b5960;--text-muted:#556269;--accent-readable:#89502f;--text-on-dark:#f6f3ed;--text-on-dark-muted:#d9d3c8}
+
 .hero{background:#171d21}.hero-shade{background:linear-gradient(90deg,#11171cf0 0%,#11171cd0 48%,#11171c78 100%),linear-gradient(0deg,#11171ce8,transparent 72%)}
 .hero h1,.hero-overline,.hero-kicker,.hero-bottom p,.hero-rail{color:var(--text-on-dark)}
 .hero h1 em{color:#e7b98f}.hero-overline,.hero-kicker{color:#e7b98f}
@@ -124,7 +124,7 @@ h1,h2,h3,h4{letter-spacing:-.065em}
 
 
 /* Final interaction and responsive typography safeguards */
-:root{--teal:#4b5960;--steel:#68777d}
+
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{overflow-x:clip}
 a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}
