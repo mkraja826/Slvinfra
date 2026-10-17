@@ -359,3 +359,26 @@ p{overflow-wrap:break-word}
 .inner-breadcrumb a{color:inherit;text-decoration:underline;text-underline-offset:4px}
 .inner-breadcrumb span[aria-current="page"]{color:#f4bb90}
 @media(prefers-reduced-motion:reduce){.site-header{transition:none}}
+
+
+/* Mobile-first QA: keep menu anchored to the shrinking sticky header */
+.site-header .mobile-nav{top:72px;height:calc(100dvh - 72px);max-height:none}
+.site-header-compact .mobile-nav{top:60px;height:calc(100dvh - 60px);max-height:none}
+.site-header .mobile-nav>a{color:#f6f3ed;min-height:56px}
+.site-header .mobile-nav>a[aria-current="page"]{color:#f3c49e;background:#ffffff0a}
+.site-header .mobile-nav>a[aria-current="page"] span{color:#f3c49e}
+.site-header .desktop-nav a[aria-current="page"]{color:#f6f3ed}
+.site-header .desktop-nav a:focus-visible,.site-header .menu-toggle:focus-visible,.site-header .mobile-nav a:focus-visible{outline:2px solid #f3c49e;outline-offset:3px}
+@media(min-width:800px){.archive-controls{grid-template-columns:minmax(240px,1fr) auto auto;gap:18px}.archive-sort{gap:10px}.archive-sort select{max-width:210px}}
+@media(max-width:799px){.archive-controls{grid-template-columns:minmax(0,1fr)}.archive-sort{flex-wrap:wrap}.archive-sort select{flex:1 1 165px;max-width:none}}
+@media(max-width:699px){
+ .hero-bottom{align-items:stretch;flex-direction:column;gap:18px}
+ .hero-bottom p{max-width:100%;margin:0}
+ .hero-actions{align-self:stretch}
+ .hero-rail{gap:16px}
+ .inner-breadcrumb{padding-top:16px}
+ .inner-intro-top{gap:12px}
+ .archive-experience .portfolio-primary h2{overflow-wrap:anywhere}
+ .service-row[id]{scroll-margin-top:78px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
