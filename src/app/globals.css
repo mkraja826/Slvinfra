@@ -485,3 +485,12 @@ p{overflow-wrap:break-word}
  .inner-page .inner-content{padding:64px 0 78px}
  .inner-page .inner-cta{padding:28px 20px}
 }
+
+
+/* Contact enquiry: visible, accessible copy fallback */
+.brief-preview{margin-top:24px;border-top:1px solid #c6ccc8;padding-top:22px;min-width:0}
+.brief-preview-heading{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 18px;margin-bottom:12px;color:#20272b}
+.brief-preview-heading strong{font-size:11px;font-weight:800;letter-spacing:.1em}
+.brief-preview-heading span{font-size:10px;letter-spacing:.08em;color:#556269}
+.brief-form .brief-preview textarea{display:block;width:100%;min-height:170px;resize:vertical;background:#f6f3ed;color:#20272b;border:1px solid #9da8a5;padding:16px;font-size:13px;line-height:1.7;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}
+.brief-preview p{margin:10px 0 0;color:#4b5960;font-size:12px;line-height:1.6}
