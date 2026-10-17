@@ -314,3 +314,19 @@ p{overflow-wrap:break-word}
  .contact-section .contact-grid h2{font-size:clamp(32px,7.8vw,42px);line-height:1.19}
  .services-lead h2,.about-statement h2{font-size:clamp(31px,7.6vw,40px);line-height:1.2}
 }
+
+
+/* Contractor-first service directory: eight verified disciplines */
+.expertise-section .expertise-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#465158;border:1px solid #465158;margin-top:32px}
+.expertise-section .expertise-item{min-width:0;display:grid;grid-template-columns:32px minmax(0,1fr) 22px;align-items:start;gap:16px;background:#20272b;padding:27px 24px;border:0;transition:background .18s ease}
+.expertise-section .expertise-item:hover,.expertise-section .expertise-item:focus-visible{background:#303a40}
+.expertise-section .expertise-item h3{font-size:clamp(18px,1.5vw,23px);line-height:1.32;letter-spacing:-.025em;margin:0 0 8px;color:#f6f3ed}
+.expertise-section .expertise-item p{font-size:14px;line-height:1.65;margin:0;color:#d9d3c8}
+.expertise-section .expertise-number{font-size:12px;letter-spacing:.08em;color:#e2a575;font-weight:700}
+.expertise-section .expertise-arrow{width:20px;height:20px;color:#e2a575}
+@media(max-width:699px){
+ .expertise-section .expertise-list{grid-template-columns:minmax(0,1fr);margin-top:24px}
+ .expertise-section .expertise-item{grid-template-columns:27px minmax(0,1fr) 20px;gap:12px;padding:22px 16px}
+ .expertise-section .expertise-item h3{font-size:19px;line-height:1.35}
+ .expertise-section .expertise-item p{font-size:13px;line-height:1.6}
+}
