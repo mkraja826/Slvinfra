@@ -1,4 +1,4 @@
-name: Build and typecheck
+name: Build, typecheck and static site smoke test
 on:
   push:
     branches: [main]
@@ -14,3 +14,22 @@ jobs:
       - run: npm install --no-audit --no-fund
       - run: npx tsc --noEmit
       - run: npm run build
+      - name: Verify five exported pages and essential assets
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const pages = ['','about','services','projects','contact'];
+          for (const route of pages) {
+            const file = path.join('out',route,'index.html');
+            if (!fs.existsSync(file)) throw new Error('Missing exported route: '+file);
+            const html = fs.readFileSync(file,'utf8');
+            if (!html.includes('SLV') || !html.includes('<main')) throw new Error('Invalid page content: '+file);
+            console.log('PASS',route || 'home');
+          }
+          const cssDir = 'out/_next/static/css';
+          if (!fs.existsSync(cssDir) || !fs.readdirSync(cssDir).some(x=>x.endsWith('.css'))) throw new Error('Missing compiled CSS assets');
+          const projectHtml=fs.readFileSync('out/projects/index.html','utf8');
+          if (!projectHtml.includes('Search by client or project')) throw new Error('Projects search missing');
+          console.log('All five routes and static assets verified');
+          NODE
