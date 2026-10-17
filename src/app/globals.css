@@ -147,3 +147,37 @@ p{overflow-wrap:break-word}
 }
 @media(max-width:359px){.hero h1{font-size:40px}.inner-intro h1{font-size:43px}.footer-wordmark{font-size:68px}.portfolio-entry{grid-template-columns:26px minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+
+/* Screenshot-verified mobile legibility repairs */
+@media(max-width:699px){
+ .hero{min-height:660px;background:#11171c}
+ .hero-image{opacity:.4;filter:grayscale(.55) contrast(.95)}
+ .hero-shade{background:linear-gradient(90deg,#11171cf5 0%,#11171ce8 65%,#11171cd0 100%)}
+ .hero-copy{padding-top:92px}
+ .hero h1{font-size:clamp(40px,10.5vw,54px);line-height:1.13;letter-spacing:-.05em;max-width:100%;text-wrap:balance}
+ .hero-bottom p,.intro-description,.contact-aside-copy,.service-row p,.portfolio-primary p,.contact-disclosure,.archive-note{font-size:15px;line-height:1.7}
+ .statement{font-size:clamp(34px,8.6vw,50px);line-height:1.16;letter-spacing:-.045em}
+ .inner-intro{min-height:0;padding:72px 0 42px}
+ .inner-intro h1{margin:55px 0 22px;font-size:clamp(38px,9.5vw,57px);line-height:1.13;letter-spacing:-.045em;text-wrap:balance}
+ .inner-intro p{font-size:15px;line-height:1.7;color:#e6e3dd}
+ .inner-intro-bottom{margin-top:48px}
+ .heritage-layout h2,.services-lead h2,.contact-aside-title{letter-spacing:-.045em;line-height:1.18}
+ .service-row{padding:26px 0;align-items:start}
+ .service-row h2{font-size:clamp(21px,5.4vw,29px);line-height:1.24;letter-spacing:-.035em}
+ .portfolio-entry{padding:24px 0;grid-template-columns:29px minmax(0,1fr);gap:10px}
+ .portfolio-primary h2{font-size:clamp(20px,5.5vw,29px);letter-spacing:-.035em;line-height:1.22}
+ .portfolio-value strong{font-size:17px}
+ .portfolio-value small{font-size:11px}
+ .brief-form label,.eyebrow,.dark-eyebrow{font-size:11px;line-height:1.5;letter-spacing:.1em}
+ .contact-form-panel{padding:22px}
+ .brief-form input,.brief-form select,.brief-form textarea{min-height:52px;font-size:16px}
+ .site-footer .footer-inner p,.site-footer .footer-inner nav a{font-size:13px;line-height:1.7}
+ .footer-bottom{font-size:11px;line-height:1.6}
+}
+@media(max-width:380px){.hero h1{font-size:39px}.inner-intro h1{font-size:37px}.service-row h2{font-size:21px}}
+/* Clear foregrounds on light concrete and dark graphite */
+.hero-overline,.hero-kicker,.inner-intro .eyebrow{color:#edc29c}
+.project-heading h2 span,.statement span,.services-lead h2 span{color:#4b5960}
+.about-statement p,.expertise-item p{color:#e2e0db}
+.contact-form-panel .form-feedback{color:#445159!important}
