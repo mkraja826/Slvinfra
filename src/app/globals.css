@@ -96,3 +96,28 @@ h1,h2,h3,h4{letter-spacing:-.065em}
 .brief-form button{background:#20272b;transition:background .2s}.brief-form button:hover{background:#3e4c53}.form-error{color:#a33e31!important}.form-feedback{color:#58666c!important}
 @media(min-width:900px){.contact-editorial-top{grid-template-columns:1fr 2fr;gap:45px}.contact-form-split{grid-template-columns:1fr 1fr;gap:16px}}
 @media(max-width:699px){.contact-editorial-top{margin-bottom:42px;padding-bottom:32px}.contact-form-panel{padding:22px}.contact-aside-title{font-size:clamp(38px,10vw,56px)}}
+
+
+/* Accessibility typography and surface contrast audit — October 2026 */
+:root{--text-primary:#20272b;--text-secondary:#4b5960;--text-muted:#556269;--accent-readable:#89502f;--text-on-dark:#f6f3ed;--text-on-dark-muted:#d9d3c8}
+.hero{background:#171d21}.hero-shade{background:linear-gradient(90deg,#11171cf0 0%,#11171cd0 48%,#11171c78 100%),linear-gradient(0deg,#11171ce8,transparent 72%)}
+.hero h1,.hero-overline,.hero-kicker,.hero-bottom p,.hero-rail{color:var(--text-on-dark)}
+.hero h1 em{color:#e7b98f}.hero-overline,.hero-kicker{color:#e7b98f}
+.statement span{color:#59666c}.project-heading h2 span{color:#52616a}.services-lead h2 span{color:#55636b}
+.manifesto-grid h2 span{color:#485860}
+.year-block small,.dark-eyebrow,.project-record-index,.portfolio-index,.contact-symbol,.contact-process span{color:var(--accent-readable)}
+.project-editorial-intro,.project-editorial-row p,.project-record-value small,.portfolio-primary p,.portfolio-value small,.archive-note,.form-heading>span:last-child{color:#4b5960}
+.project-editorial-row .project-record-index{color:var(--accent-readable)}
+.intro-description,.heritage-layout p,.contact-aside-copy,.contact-disclosure,.service-row p,.brief-form>p{color:#4b5960}
+.contact-form-panel{color:#20272b}.brief-form input,.brief-form select,.brief-form textarea{color:#20272b}
+.brief-form input::placeholder,.brief-form textarea::placeholder{color:#5c676c;opacity:1}
+.brief-form label{font-size:12px;letter-spacing:.08em}.form-heading>span:last-child{font-size:11px}
+.eyebrow{font-size:12px;letter-spacing:.13em}.portfolio-value small,.project-record-value small,.project-editorial-intro{font-size:11px}
+.hero-kicker,.hero-overline,.hero-rail,.hero-rail a{font-size:11px}
+.inner-intro p,.expertise-item p,.contact-grid p,.manifesto-grid p{color:#e2e1dc}
+.expertise-item .expertise-number,.expertise-arrow,.expertise-tag{color:#e7b98f}
+.expertise-item p{color:#d9d3c8}
+.site-footer .footer-bottom{color:#d9d3c8}.site-footer .footer-inner p{color:#d9d3c8}
+.mobile-nav p{color:#4b5960}.mobile-nav>a span,.mobile-nav>a svg{color:var(--accent-readable)}
+.brand-label small{color:#89502f}
+@media(max-width:699px){.hero h1{line-height:1.08;letter-spacing:-.055em}.inner-intro h1{line-height:1.08;letter-spacing:-.055em}.statement{line-height:1.2}.expertise-item h3{line-height:1.2}.portfolio-primary h2{line-height:1.22}}
