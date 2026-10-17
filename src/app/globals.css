@@ -53,3 +53,16 @@ h1,h2,h3,h4{letter-spacing:-.065em}
 @media(min-width:700px){.project-editorial-row{grid-template-columns:70px 1fr 190px 24px;gap:25px;padding:43px 0}.project-record-value{display:block}.footer-inner{grid-template-columns:1fr 1fr}.hero-inner{padding-bottom:95px}}
 @media(min-width:1100px){.site-header{height:88px}.hero{min-height:calc(100svh - 88px)}.header-descriptor{display:none}.desktop-nav,.header-enquire{display:flex}.footer-inner{grid-template-columns:1.3fr 1fr}.inner-intro{padding:95px 0 65px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+
+/* Project archive / editorial index */
+.portfolio-list{border-top:1px solid #1b3c3040;margin-top:22px}
+.portfolio-entry{display:grid;grid-template-columns:35px minmax(0,1fr);gap:12px;padding:27px 0;border-bottom:1px solid #1b3c3040;align-items:start}
+.portfolio-index{color:#98794f;font-size:11px;font-weight:800;letter-spacing:.1em;padding-top:7px}
+.portfolio-primary{min-width:0}.portfolio-primary h2{font-size:clamp(23px,3.3vw,43px);font-weight:600;line-height:1.15;margin:0 0 10px;overflow-wrap:anywhere}
+.portfolio-primary p{color:#657368;font-size:13px;line-height:1.65;margin:0}
+.portfolio-value{grid-column:2;display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-top:8px}
+.portfolio-value small{font-size:9px;letter-spacing:.09em;color:#7c867d}.portfolio-value strong{font-size:18px;font-weight:700;color:#193a2e}
+@media(min-width:800px){.portfolio-entry{grid-template-columns:75px minmax(0,1fr) 220px;gap:25px;padding:35px 0}.portfolio-value{grid-column:3;display:block;margin:0;text-align:right}.portfolio-value strong{display:block;margin-top:10px;font-size:21px}}
+/* Mobile layout safeguards */
+@media(max-width:699px){.hero h1{font-size:clamp(43px,10.6vw,68px)}.hero-copy{padding-top:100px}.hero-inner{padding-bottom:55px}.inner-intro h1{margin-top:65px;font-size:clamp(46px,11vw,70px);overflow-wrap:anywhere}.inner-intro-top .eyebrow:last-child{display:none}.intro-section,.expertise-section,.project-section,.manifesto-section,.contact-section{padding-block:82px}.footer-wordmark{font-size:clamp(74px,20vw,120px)}.project-editorial-row h3{overflow-wrap:anywhere}.archive-topline{font-size:10px}}
