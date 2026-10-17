@@ -44,3 +44,14 @@ An editorial digital experience inspired by architecture publications and establ
 
 ## Current implementation caveat
 Existing homepage is a preliminary scaffold. It needs a full visual redesign and integration of brochure-backed project data. This document is a design brief, not proof that redesign is completed.
+
+## Mobile-first implementation contract
+- Start layout and interaction design at 360px, then 390/430px; tablet and desktop are progressive enhancements.
+- Base CSS is single-column with generous readable margins; introduce multi-column layouts only when content benefits.
+- Navigation: accessible menu button with aria-expanded, meaningful focus management and 44x44px minimum tap targets.
+- Hero: visible primary message and CTA above the fold where practical, without fixed-height clipping.
+- Media: responsive aspect ratios and sizes; lazy-load non-critical imagery and avoid autoplay mobile video.
+- Forms: correct input types, clear labels, visible error states and keyboard-safe layouts.
+- Motion: no scroll hijacking, avoid large animations on small devices and honor reduced motion.
+- QA: test 320, 360, 390, 430, 768, 1024, 1440px, portrait and landscape; check overflow, menus, cards, forms, CLS and loading.
+- Never call the website production-ready without real-device and build verification.
