@@ -494,3 +494,13 @@ p{overflow-wrap:break-word}
 .brief-preview-heading span{font-size:10px;letter-spacing:.08em;color:#556269}
 .brief-form .brief-preview textarea{display:block;width:100%;min-height:170px;resize:vertical;background:#f6f3ed;color:#20272b;border:1px solid #9da8a5;padding:16px;font-size:13px;line-height:1.7;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}
 .brief-preview p{margin:10px 0 0;color:#4b5960;font-size:12px;line-height:1.6}
+
+/* Fix mobile navigation contrast on ivory overlay: links must not inherit dark-menu white */
+.site-header .mobile-nav{background:#f6f3ed;color:#20272b}
+.site-header .mobile-nav>a,.site-header .mobile-nav>a:link,.site-header .mobile-nav>a:visited{color:#20272b;border-bottom-color:#20272b33}
+.site-header .mobile-nav>a:hover,.site-header .mobile-nav>a:focus-visible{color:#20272b;background:#20272b0b}
+.site-header .mobile-nav>a[aria-current="page"],.site-header .mobile-nav>a[aria-current="page"]:visited{color:#89502f;background:#b7784a16}
+.site-header .mobile-nav>a span,.site-header .mobile-nav>a svg{color:#89502f}
+.site-header .mobile-nav>a[aria-current="page"] span,.site-header .mobile-nav>a[aria-current="page"] svg{color:#89502f}
+.site-header .mobile-nav p{color:#4b5960}
+.site-header .mobile-nav>a:focus-visible{outline:2px solid #89502f;outline-offset:-2px}
