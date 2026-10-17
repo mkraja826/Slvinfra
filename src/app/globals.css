@@ -121,3 +121,29 @@ h1,h2,h3,h4{letter-spacing:-.065em}
 .mobile-nav p{color:#4b5960}.mobile-nav>a span,.mobile-nav>a svg{color:var(--accent-readable)}
 .brand-label small{color:#89502f}
 @media(max-width:699px){.hero h1{line-height:1.08;letter-spacing:-.055em}.inner-intro h1{line-height:1.08;letter-spacing:-.055em}.statement{line-height:1.2}.expertise-item h3{line-height:1.2}.portfolio-primary h2{line-height:1.22}}
+
+
+/* Final interaction and responsive typography safeguards */
+:root{--teal:#4b5960;--steel:#68777d}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{overflow-x:clip}
+a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #b7784a;outline-offset:4px}
+button,select{cursor:pointer}
+button:disabled{cursor:not-allowed;opacity:.6}
+p{overflow-wrap:break-word}
+.inner-intro h1,.hero h1,.statement,.services-lead h2,.contact-grid h2{overflow-wrap:break-word}
+.section-wrap,.hero-inner,.site-header-inner{min-width:0}
+.portfolio-primary,.project-editorial-row>div,.contact-page-grid>*{min-width:0}
+@media(max-width:699px){
+ .site-header-inner{width:calc(100% - 32px)}
+ .hero{min-height:620px;min-height:max(620px,calc(100svh - 78px))}
+ .hero h1{font-size:clamp(42px,10vw,65px)}
+ .hero h1 em{display:inline}
+ .portfolio-entry{gap:14px}
+ .service-row{gap:14px}
+ .brief-form input,.brief-form select,.brief-form textarea{font-size:16px}
+ .footer-inner nav{gap:18px 24px}
+}
+@media(max-width:359px){.hero h1{font-size:40px}.inner-intro h1{font-size:43px}.footer-wordmark{font-size:68px}.portfolio-entry{grid-template-columns:26px minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
