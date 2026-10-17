@@ -181,3 +181,24 @@ p{overflow-wrap:break-word}
 .project-heading h2 span,.statement span,.services-lead h2 span{color:#4b5960}
 .about-statement p,.expertise-item p{color:#e2e0db}
 .contact-form-panel .form-feedback{color:#445159!important}
+
+
+/* Project archive / mobile-first reading experience */
+.archive-experience{width:100%}.archive-controls{display:grid;gap:15px;margin-bottom:25px}
+.archive-search{display:flex;align-items:center;gap:12px;min-height:56px;padding:0 15px;background:#fff;border:1px solid #20272b50;color:#4b5960}
+.archive-search:focus-within{outline:2px solid #b7784a;outline-offset:2px}
+.archive-search input{width:100%;min-width:0;flex:1;border:0;background:transparent;color:#20272b;font:inherit;font-size:16px;outline:none}
+.archive-search input::placeholder{color:#59666c}.archive-search button{display:flex;align-items:center;justify-content:center;border:0;background:transparent;color:#20272b;padding:8px}
+.archive-sort{display:flex;align-items:center;justify-content:space-between;gap:12px}.archive-sort label{font-size:11px;letter-spacing:.12em;font-weight:800;color:#4b5960}.archive-sort select{min-width:0;max-width:230px;border:1px solid #20272b50;background:#fff;color:#20272b;padding:13px;font-size:13px}
+.archive-count{display:flex;justify-content:space-between;gap:12px;padding:16px 0;color:#4b5960;font-size:11px;font-weight:800;letter-spacing:.08em}
+.archive-count span:last-child{display:none}
+.archive-experience .portfolio-list{margin-top:0}
+.archive-experience .portfolio-entry{display:grid;grid-template-columns:32px minmax(0,1fr);gap:13px;padding:27px 0;align-items:start}
+.archive-experience .portfolio-index{font-size:12px;padding-top:4px;color:#89502f}
+.archive-experience .portfolio-primary h2{font-size:clamp(23px,5.7vw,33px);line-height:1.22;letter-spacing:-.035em;margin-bottom:12px}
+.archive-experience .portfolio-primary p{font-size:15px;line-height:1.7;color:#4b5960}
+.archive-experience .portfolio-value{grid-column:auto;margin-top:20px;padding-top:13px;border-top:1px solid #20272b24;display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-align:left}
+.archive-experience .portfolio-value small{font-size:11px;color:#4b5960;letter-spacing:.07em}
+.archive-experience .portfolio-value strong{font-size:19px;color:#20272b;margin:0}
+.archive-empty{padding:55px 20px;text-align:center;border-bottom:1px solid #20272b40}.archive-empty h2{font-size:27px}.archive-empty p{color:#4b5960}.archive-empty button{border:0;background:#20272b;color:#fff;padding:13px 20px;font-weight:700}
+@media(min-width:800px){.archive-controls{grid-template-columns:minmax(0,1fr) auto;align-items:center}.archive-count span:last-child{display:block}.archive-experience .portfolio-entry{grid-template-columns:75px minmax(0,1fr);gap:25px;padding:36px 0}.archive-experience .portfolio-primary{display:grid;grid-template-columns:minmax(0,1fr) 210px;column-gap:30px}.archive-experience .portfolio-primary h2,.archive-experience .portfolio-primary p{grid-column:1}.archive-experience .portfolio-value{grid-column:2;grid-row:1/span 2;align-items:flex-end;text-align:right;margin:0;padding:0;border:0}}
