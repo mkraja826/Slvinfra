@@ -382,3 +382,12 @@ p{overflow-wrap:break-word}
  .service-row[id]{scroll-margin-top:78px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Four-control project archive: clear hierarchy on all widths */
+.archive-controls{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.archive-sort{display:flex;align-items:center;gap:10px;min-width:0}
+.archive-sort label{flex:0 0 auto;font-size:11px;letter-spacing:.04em}
+.archive-sort select{flex:1 1 auto;min-width:0;max-width:none;min-height:46px}
+@media(min-width:760px){.archive-controls{grid-template-columns:repeat(3,minmax(0,1fr));align-items:end;gap:14px}.archive-search{grid-column:1/-1}.archive-sort{flex-direction:column;align-items:stretch}.archive-sort select{width:100%}}
+@media(min-width:1160px){.archive-controls{grid-template-columns:minmax(230px,1.5fr) repeat(3,minmax(0,1fr));align-items:end}.archive-search{grid-column:auto}}
